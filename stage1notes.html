@@ -1,0 +1,97 @@
+<!-- Yes, I know how to create an html comment -->
+<!-- It is easy to share feedback in notes, or just add reminders of what code you've written. -->
+<!-- You know...for working with others...reminders to future ME...so stupid...I forgot...aghhhh..wait ...there's my note -->
+<head>
+  <!-- Title tag. N'uff said. -->
+  <title>Nico's Notes</title>
+  <style>
+         .floating-box {
+         display: inline-block;
+         width: 150px;
+         height: 75px;
+         margin: 10px;
+         border: 3px solid #73AD21;
+         }
+
+         .after-box {
+         border: 3px solid red;
+         }
+   </style>
+   <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   <script>
+         $(function() {
+            $( "#button-1, #button-2, #button-3, #button-4" ).button();
+            $( "#button-5" ).buttonset();
+         });
+   </script>
+</head>
+
+<body>
+
+
+<!-- The <h1> tag... most important heading for an article  -->
+<h1>Wow... the interwebs is so cool!</h1>
+
+<h2>History of the interwebs and how the technology works</h2>
+   <p>So yeah...I went to wikipedia...turns out the
+   <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">world wide web has quite some history<a/>.
+  Some guy named Tim Berners Lee invented the internet. In essence the world wide web is just a bunch of text files sitting on computer servers
+  all linked together and approachable through Domain Name Servers (DNS). Where the domain name is sort of the home adress where you live.
+  To visit an adress you need a webbrowser. Webbrowsers display client side code (HTML, CSS, JavaScript etc.).
+  The code files stored on the server are... server side code (PHP, Python, Ruby etc.). Often ther are also databases involved (SQL or no-SQL).
+  So yeah, I sort of have an basic understanding of the interwebs.
+   </p>
+
+<!-- HTML is an important building block of the internet  -->
+<h3>HTML</h3>
+<p>HTML is <em>the common language</em> browsers speak. It is not a programming language, but more a markup language that structures webpages.
+  <br>
+  You can also add hippmunks <img src="http://www.udacity.com/cs253x/hipmunk.png" alt="hipmunk!"> to lines of text.
+  This is an example of inline html elements.
+  <br>
+  There are also block elements like a div.
+  Div's (block) and span's (inline) are container elements to structure the html.
+</p>
+
+<!-- CSS is another important building block of the internet  -->
+<h3>CSS</h3>
+<p>Another cool technology is CSS it provides pretty design and floating blocks for example:</p>
+  <div class="floating-box">Floating box</div>
+<p>
+With HTML we control structure and with CSS we control the design.
+Boxifying a Photoshop design is a commen practise.
+Those div's get a class or id name to use CSS styling on later.
+</p>
+
+<!-- JavaScript is another important building block of the internet  -->
+<h3>JavaScript</h3>
+<p>
+JavaScript is not to be confused with the Java programming language.
+JavaScript is a scripting language we can use for writing client side code in browsers.
+</p>
+
+<p>One example is you can can create jquery buttons:</p>
+<br>
+<button id="button-1">A button element</button>
+<input id="button-2" type="submit" value="A submit button">
+<a id="button-3" href="">An anchor</a>
+<input type="checkbox"  id="button-4" >
+<label for="button-4">Toggle</label>
+<br>
+<br>
+<div id="button-5">
+    <input type="checkbox" id="check1">
+    <label for="check1">Left</label>
+    <input type="checkbox" id="check2">
+    <label for="check2">Middle</label>
+    <input type="checkbox" id="check3">
+    <label for="check3">Right</label>
+</div>
+
+
+<h3>Wrapping it up</h3>
+<p>As you can see I can mess around a bit with webpages already.</p>
+
+</body>
